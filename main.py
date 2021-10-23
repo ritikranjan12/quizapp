@@ -9,7 +9,7 @@ from colored import fg
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 for voice in voices:
-    engine.setProperty("rate",170)
+    engine.setProperty("rate",175)
     engine.setProperty("voice",voices[1].id,)
 
 def speak(text):
@@ -42,7 +42,7 @@ print()
 print(color1+"Rules of the Game are as follows: ")
 print(color4+" 1. For every correct question you get 10 points ")
 print(color4+" 2. For every wrong answer you get -10 points")
-print(color4+" 3. if the answer given in option 1 is correct then type the answer as option1 and so on ")
+print(color4+" 3. if the answer given in option 1 is correct then type the answer as 1 and so on ")
 print(color4+" 4. if you get 100 points you are the winner ")
 print()
 print(color3+"Game is starting...")
